@@ -1,5 +1,8 @@
 /* Here are just some visual styles. 🖌 */
-
+html,
+body {
+  height: 100%;
+}
 .container {
   min-width: 600px;
   max-width: 800px;
@@ -19,6 +22,10 @@ p {
 }
 
 body {
+  background-image: url("lisa.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: auto 500px;
   font-family: "Montserrat", sans-serif;
   background-color: black;
 }
