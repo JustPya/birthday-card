@@ -1,0 +1,94 @@
+/* Here are just some visual styles. 🖌 */
+
+.container {
+  min-width: 600px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-container {
+  text-align: justify;
+}
+
+p {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 120px;
+}
+
+.card-ps-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.card-ps-container > p {
+  color: #2f64d6;
+}
+
+/* Text animation */
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #f8db27;
+  --color-2: #2f64d6;
+  --color-3: #9c5b01;
+}
+
+.title-word-2 {
+  --color-1: #ffffff;
+  --color-2: #ff81c1;
+  --color-3: #17494d;
+}
+
+.title-word-3 {
+  --color-1: #ff81c1;
+  --color-2: #9c5b01;
+  --color-3: #ff81c1;
+}
+
+.title-word-4 {
+  --color-1: #2f64d6;
+  --color-2: #f8db27;
+  --color-3: #9c5b01;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}
